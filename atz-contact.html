@@ -48,16 +48,39 @@
         <div class="form-field"><label for="location">Project Location</label><input id="location" name="location" type="text"></div>
         <div class="form-field"><label for="timeline">Project Timeline</label><input id="timeline" name="timeline" type="text"></div>
       </div>
-      <fieldset>
-        <legend>Services Needed</legend>
-        <label><input type="checkbox" name="services" value="temporary-offices"> Temporary Offices</label>
-        <label><input type="checkbox" name="services" value="lab-trailers"> Lab Trailers</label>
-        <label><input type="checkbox" name="services" value="restrooms"> Portable Restrooms</label>
-        <label><input type="checkbox" name="services" value="dumpsters"> Dumpsters</label>
-        <label><input type="checkbox" name="services" value="fencing"> Temporary Fencing</label>
-        <label><input type="checkbox" name="services" value="utilities"> Utilities / Internet / Phone</label>
-        <label><input type="checkbox" name="services" value="demobilization"> Demobilization</label>
-      </fieldset>
+    <fieldset class="services-fieldset">
+      <legend>Services Needed</legend>
+        <div class="services-grid">
+          <label class="service-option">
+            <input type="checkbox" name="services[]" value="temporary-offices">
+            <span>Temporary Offices</span>
+          </label>
+          <label class="service-option">
+            <input type="checkbox" name="services[]" value="lab-trailers">
+            <span>Lab Trailers</span>
+          </label>
+          <label class="service-option">
+            <input type="checkbox" name="services[]" value="restrooms">
+            <span>Portable Restrooms</span>
+          </label>
+          <label class="service-option">
+            <input type="checkbox" name="services[]" value="dumpsters">
+            <span>Dumpsters</span>
+          </label>
+          <label class="service-option">
+            <input type="checkbox" name="services[]" value="fencing">
+            <span>Temporary Fencing</span>
+          </label>
+          <label class="service-option">
+            <input type="checkbox" name="services[]" value="utilities">
+            <span>Utilities / Internet / Phone</span>
+          </label>
+          <label class="service-option">
+            <input type="checkbox" name="services[]" value="demobilization">
+            <span>Demobilization</span>
+          </label>
+        </div>
+    </fieldset>
       <div class="form-field"><label for="message">Project Details <span aria-hidden="true">*</span></label><textarea id="message" name="message" rows="7" required></textarea></div>
       <p class="form-note">Required fields are marked with an asterisk. Production form validation and error messaging should be connected before launch.</p>
       <button class="btn btn-gold" type="submit">Submit Quote Request</button>
