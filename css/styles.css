@@ -485,18 +485,17 @@ fieldset {
 .service-option {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  min-height: 48px;
+  gap: 12px;
   cursor: pointer;
   font-weight: 900;
+  line-height: 1;
 }
 
 .service-option input[type="checkbox"] {
-  width: 22px;
-  height: 22px;
-  min-height: 22px;
+  width: 20px;
+  height: 20px;
   margin: 0;
-  flex: 0 0 auto;
+  flex-shrink: 0;
 }
 
 .service-option span {
