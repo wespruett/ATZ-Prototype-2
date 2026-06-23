@@ -328,6 +328,11 @@ h3 {
 .connect-grid {
   grid-template-columns: repeat(2, 1fr);
 }
+.service-category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
 
 /* Cards */
 .value-card,
@@ -598,13 +603,14 @@ fieldset {
   .value-grid,
   .card-grid,
   .service-detail-grid,
+  .service-category-grid,
   .gallery-grid,
   .testimonial-grid,
   .split-section,
   .form-grid,
   .connect-grid {
-    grid-template-columns: 1fr;
-  }
+  grid-template-columns: 1fr;
+}
 
   .footer-inner {
     flex-direction: column;
@@ -613,6 +619,8 @@ fieldset {
   .footer a {
     margin-left: 0;
     margin-right: 1rem;
+
+    
   }
 }
 
