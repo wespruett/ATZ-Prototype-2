@@ -328,10 +328,14 @@ h3 {
 .connect-grid {
   grid-template-columns: repeat(2, 1fr);
 }
-.service-category-grid {
+.service-category-grid .service-detail {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.2rem;
+}
+
+.service-nav-section {
+  padding-top: 0;
 }
 
 /* Cards */
