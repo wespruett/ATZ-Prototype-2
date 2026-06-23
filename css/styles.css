@@ -328,10 +328,20 @@ h3 {
 .connect-grid {
   grid-template-columns: repeat(2, 1fr);
 }
-.service-category-grid .service-detail {
+.service-category-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.2rem;
+}
+
+.service-category-grid .service-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-category-grid .service-detail .btn {
+  margin-top: auto;
+  align-self: center;
 }
 
 .service-nav-section {
